@@ -207,6 +207,7 @@
     }
     if (path.endsWith('/index.html')) {
       candidates.push(path.slice(0, -10) || '/');
+      candidates.push('/');
     }
     return candidates;
   }
