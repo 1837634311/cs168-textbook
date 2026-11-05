@@ -218,6 +218,13 @@
     for (var index = 0; index < candidates.length; index++) {
       if (pages[candidates[index]]) return pages[candidates[index]];
     }
+    var pageKeys = Object.keys(pages);
+    for (var keyIndex = 0; keyIndex < pageKeys.length; keyIndex++) {
+      var pageKey = pageKeys[keyIndex];
+      if (window.location.pathname.endsWith(pageKey)) {
+        return pages[pageKey];
+      }
+    }
     return null;
   }
 
