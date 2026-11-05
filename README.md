@@ -12,6 +12,20 @@ site/index.html
 
 不需要联网，也不需要安装额外软件。默认是 dark mode，默认阅读模式是中文。
 
+## 部署到 GitHub Pages
+
+仓库已配置 GitHub Pages Actions。向 `main` 分支推送后，Actions 会自动把
+`site/` 目录发布为网站。
+
+首次部署时，在仓库的 **Settings → Pages → Build and deployment** 中将
+**Source** 设置为 **GitHub Actions**。部署完成后，网站地址通常是：
+
+```text
+https://1837634311.github.io/cs168-textbook/
+```
+
+也可以在 **Actions** 页面手动运行 `Deploy static site to GitHub Pages`。
+
 ## 阅读模式
 
 页面右上角有三个切换按钮：
